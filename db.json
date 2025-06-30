@@ -1,9 +1,28 @@
-POST https://jsonplaceholder.typicode.com/posts
-Content-Type: application/json
-
 {
-  "title": "Test Post",
-  "body": "Testing datetime",
-  "userId": 1,
-  "createdAt": "2025-06-30T04:15:00+03:00"
+  "posts": [
+    {
+      "id": 1,
+      "title": "Sample Post",
+      "body": "This is a sample post",
+      "userId": 1,
+      "createdAt": "2025-06-30T04:20:00+03:00"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "createdAt": "2025-06-30T04:20:00+03:00"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "body": "Great post!",
+      "email": "user@example.com",
+      "createdAt": "2025-06-30T04:20:00+03:00"
+    }
+  ]
 }
